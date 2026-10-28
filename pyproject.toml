@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "soujink-deploy_jd423"
+version = "0.1.0"
+description = "通过字符级与结构级特征识别模型部署工程师·回归集与线上样本的差分的痕迹，给出密度与命中位置"
+readme = "README.md"
+requires-python = ">=3.10"
+license = { file = "LICENSE" }
+authors = [{ name = "soujink" }]
+keywords = ["analysis", "observability", "evaluation", "rag"]
+classifiers = [
+    "Development Status :: 4 - Beta",
+    "Environment :: Console",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Utilities",
+]
+
+[project.urls]
+Homepage = "https://soujink.github.io"
+Repository = "https://github.com/soujink/deploy_jd423"
+Issues = "https://github.com/soujink/deploy_jd423/issues"
+
+[project.scripts]
+deploy_jd423 = "deploy_jd423:main"
+
+[tool.setuptools]
+py-modules = ["deploy_jd423"]
